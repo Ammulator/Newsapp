@@ -30,7 +30,7 @@ const capatalizeFirstLetter=(string)=>{
     }
 
     useEffect(() => {
-        document.title=`${capatalizeFirstLetter(props.category)}-NewsMonkey`;
+        document.title=`${capatalizeFirstLetter(props.category)}-News Time`;
         // eslint-disable-next-line 
         Updatenews();
         // eslint-disable-next-line 
@@ -46,7 +46,7 @@ const capatalizeFirstLetter=(string)=>{
     };
         return (
             <>
-                <h1 className='text-center' style={{ margin: '40px 0px', marginTop:"90px"}}>NewsMonkey - Top {capatalizeFirstLetter(props.category)} Headlines</h1>
+                <h1 className='text-center' style={{ margin: '40px 0px', marginTop:"90px"}}>News Time - Top {capatalizeFirstLetter(props.category)} Headlines</h1>
                 {loading && <Spinner />}
                 <InfiniteScroll
                     dataLength={articles.length}
